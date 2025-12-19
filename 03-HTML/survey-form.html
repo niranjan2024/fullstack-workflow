@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+</head>
+<body>
+    <form method="#post">
+    <fieldset>
+    <legend>Personal Information</legend>
+    <!-- fields here -->
+        <div>
+            <label>Full Name:</label>
+            <input type="text" required minlength=2, maxlength=100 placeholder="Enter Your Name"><br>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" required placeholder="Enter your Email"><br>
+        </div>
+        <div>
+            <label>Phone:</label>
+            <input type="tel" required placeholder="Enter your number"><br>
+        <div>
+            <label for="age range">Age Range:</label>
+            <select id="age range" name="age range">
+                <optgroup label="Select Dropdown">
+                    <option value="Dropdown"></option>
+                    <option value="Under 18">Under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55+">55+</option>
+                </optgroup>
+            </select><br>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"><label>Male</label>
+            <input type="radio" name="gender" value="female"><label>Female</label>
+            <input type="radio" name="gender" value="Prefer not to say"><label>Prefer not to say</label>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Product Feedback</legend>
+                <!-- fields here -->
+                 <div>
+                 <h2>Products used</h2>
+                 <label><input type="checkbox" name="Product" value=" Product A - Web Application">Product A - Web Application</label><br>
+                 <label><input type="checkbox" name="Product" value=" Product B - Mobile App">Product B - Mobile App</label><br>
+                 <label><input type="checkbox" name="Product" value=" Product C - Desktop Software">Product C - Desktop Software</label><br>
+                 <label><input type="checkbox" name="Product" value=" Product D - API Services">Product D - API Services</label><br>
+                 <label><input type="checkbox" name="Product" value=" Product E - Cloud Storage">Product E - Cloud Storage</label><br>
+                 </div>
+                 <div>
+                 <h2>Primary Product</h2>
+                 <select>
+                    <optgroup label="Select Dropdown">
+                        <option value="Dropdown"></option>
+                        <option value="Product A - Web Application">Product A - Web Application</option>
+                        <option value="Product B - Mobile App">Product B - Mobile App</option>
+                        <option value="Product C - Desktop Software">Product C - Desktop Software</option>
+                        <option value="Product D - API Services">Product D - API Services</option>
+                        <option value="Product E - Cloud Storage">Product E - Cloud Storage</option>
+                    </optgroup>
+                 </select>
+                 </div>
+                 <div>
+                 <h2>How long have you been a customer? </h2>
+                 <select>
+                    <optgroup label="Select Dropdown">
+                        <option value="Dropdown"></option>
+                        <option value="Less than 1 month">Less than 1 month</option>
+                        <option value="1-6 months">1-6 months</option>
+                        <option value="6-12 months">6-12 months</option>
+                        <option value="1-2 years">1-2 years</option>
+                        <option value="More than 2 years">More than 2 years</option>
+                    </optgroup>
+                 </select>
+                 </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+                <!-- fields here -->
+                 <div>
+                 <h2>Overall Satisfaction</h2>
+                 <label>Rating</label><br>
+                 <input type="radio" name="rating" value="1"><label>1</label><br>
+                 <input type="radio" name="rating" value="2"><label>2</label><br>
+                 <input type="radio" name="rating" value="3"><label>3</label><br>
+                 <input type="radio" name="rating" value="4"><label>4</label><br>
+                 <input type="radio" name="rating" value="5"><label>5</label>
+                 </div>
+                 <div>
+                 <h2>Product Quality </h2>
+                 <label for="rating">Rating (1-10):</label><br>
+                <input type="range" id="rating" name="rating" min="1" max="10">
+                </div>
+                <div>
+                <h2>Customer Support </h2>
+                 <label for="rating">Rating (1-10):</label><br>
+                <input type="range" id="rating" name="rating" min="1" max="10">
+                </div>
+                <div>
+                <h2>Value for Money </h2>
+                 <label for="rating">Rating (1-10):</label><br>
+                <input type="range" id="rating" name="rating" min="1" max="10">
+                </div>
+                <div>
+                    <h2>Would you recommend us? </h2>
+                    <input type="radio"><label>Definitely</label>
+                    <input type="radio"><label>Probably</label>
+                    <input type="radio"><label>Not sure</label>
+                    <input type="radio"><label>Probably not</label>
+                    <input type="radio"><label>Definitely not</label>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Detailed Feedback</legend>
+                <!-- fields here -->
+                <h2>What do you like most?</h2>
+                <textarea required rows=4, maxlength=500 placeholder="Share your thoughts..."></textarea><br>
+                <h2>What can we improve?</h2>
+                <textarea required rows=4, maxlength=500 placeholder="Share your thoughts..."></textarea><br>
+                <h2>Additional Comments</h2>
+                <textarea required rows=6, maxlength=1000 placeholder="Share your thoughts..."></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Preferences</legend>
+                <!-- fields here -->
+                <div>
+                    <h2>Preferred Contact Method</h2>
+                    <select>
+                        <optgroup label="Dropdown">
+                            <option value="Dropdown"></option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
+                            <option value="SMS">SMS</option>
+                            <option value="No contact">No contact</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <h2>Best Time to Contact </h2>
+                    <input type="checkbox"><label>Morning (9am-12pm)</label><br>
+                    <input type="checkbox"><label>Afternoon (12pm-5pm)</label><br>
+                    <input type="checkbox"><label>Evening (5pm-8pm)</label>
+                </div>
+                <div>
+                    <h2>Subscribe to Newsletter</h2>
+                    <input type="checkbox"><label>YES</label>
+                    <input type="checkbox"><label>NO</label>
+                </div>
+                <div>
+                    <h2>Agree to Terms</h2>
+                    <input type="checkbox" required>
+                </div>
+        </fieldset>
+        <div class="form-actions">
+            <button type="submit">Submit Survey</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+    
+</body>
+</html>

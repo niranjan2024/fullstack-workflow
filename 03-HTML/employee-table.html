@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+</head>
+<body>
+
+<header>
+    <h1>Revature</h1>
+    <p>Company Employee Directory - 2024</p>
+    <label>Department filter:</label><select>
+        <optgroup label="Departments">
+            <option value="select Dropdown">Select Dropdown</option>
+            <option value="hr">HR</option>
+            <option value="development">Developemnt</option>
+            <option value="sales">Sales</option>
+            <option value="finance">Finance</option>
+            <option value="testing">Testing</option>
+            <option value="marketing">Marketing</option>
+        </optgroup>
+    </select>
+</header>
+
+<table aria-label="Company Employee Directory" border="1">
+    
+    <!-- Table Header -->
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Position</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+        <tr>
+            <th scope="row">EMP001</th>
+            <td><img src="images/niranjan.jpg" alt="Niranjan" width="50"></td>
+            <td>Niranjan</td>
+            <td>Developemnt</td>
+            <td>Trainee</td>
+            <td><a href="mailto:niranjan@gmail.com">niranjan@gmail.com</a></td>
+            <td><a href="tel:+919988774455">9988774455</a></td>
+            <td><time datetime="2025-12-18">Dec 18, 2025</time></td>
+            <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+            <th scope="row">EMP002</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/6069/6069202.png" alt="Employee" width="50"></td>
+            <td>Madhu</td>
+            <td>Testing</td>
+            <td>Trainee</td>
+            <td><a href="mailto:madhu@gmail.com">madhu@gmail.com</a></td>
+            <td><a href="tel:+912255668877">2255668877</a></td>
+            <td><time datetime="2025-12-18">Dec 18, 2025</time></td>
+            <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+            <th scope="row">EMP003</th>
+            <td><img src="https://www.shutterstock.com/shutterstock/photos/1848738265/display_1500/stock-vector-male-employee-profile-symbol-illustration-boy-person-avatars-logo-vector-young-men-head-avatar-1848738265.jpg" alt="Employee" width="50"></td>
+            <td>Durga</td>
+            <td>HR</td>
+            <td>HR</td>
+            <td><a href="mailto:hrrevature@gmail.com">hrRevature@gmail.com</a></td>
+            <td><a href="tel:+919966552211">9966552211</a></td>
+            <td><time datetime="2025-12-18">Dec 18, 2025</time></td>
+            <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+            <th scope="row">EMP004</th>
+            <td><img src="https://e7.pngegg.com/pngimages/894/494/png-clipart-black-male-symbol-art-avatar-education-professor-user-profile-faculty-boss-face-heroes.png" alt="Employee" width="50"></td>
+            <td>Deepak</td>
+            <td>Sales</td>
+            <td>Intern</td>
+            <td><a href="mailto:deepak@gmail.com">deepak@gmail.com</a></td>
+            <td><a href="tel:+91256321470">256321470</a></td>
+            <td><time datetime="2025-12-18">Dec 18, 2025</time></td>
+            <td><span class="status active">Active</span></td>
+        </tr>
+        <tr>
+            <th scope="row">EMP005</th>
+            <td><img src="https://i.pinimg.com/736x/51/10/80/51108072c6b0953746839af01e0bd1a6.jpg" alt="Employee" width="50"></td>
+            <td>Siva</td>
+            <td>Marketing</td>
+            <td>Senior</td>
+            <td><a href="mailto:siva@gmail.com">siva@gmail.com</a></td>
+            <td><a href="tel:+91165412380">165412380</a></td>
+            <td><time datetime="2025-12-18">Dec 18, 2025</time></td>
+            <td><span class="status active">Leave</span></td>
+        </tr>
+
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="9">
+                Total Employees: 4 | Departments: HR(1), Sales(1), Finance, Development(1), Testing(1), Marketing(1)
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
