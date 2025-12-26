@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #2563eb;
+  --sale-color: #16a34a;
+  --badge-color: #ef4444;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --card-bg: #ffffff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  max-width: 350px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* IMAGE */
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+/* CONTENT */
+.card-content {
+  padding: 16px;
+}
+
+/* BADGE */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--badge-color);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+/* TYPOGRAPHY */
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.card-description {
+  font-size: 14px;
+  color: var(--text-light);
+  margin: 8px 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* PRICE */
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: var(--text-light);
+}
+
+.price-sale {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--sale-color);
+}
+
+/* BUTTON */
+.card-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card-button:hover {
+  background: #1e40af;
+}
+
+.card-button:active {
+  transform: scale(0.97);
+}
