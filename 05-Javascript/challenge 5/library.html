@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Management System</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .library {
+      background: #fff;
+      width: 600px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    button {
+      margin: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="library">
+  <h2>Library Management</h2>
+
+  <button id="setup">Setup Library</button>
+  <button id="borrow">Borrow Book</button>
+  <button id="return">Return Book</button>
+  <button id="overdue">Show Overdue</button>
+
+  <h3>Output</h3>
+  <pre id="output"></pre>
+</div>
+
+<script src="library.js"></script>
+</body>
+</html>
