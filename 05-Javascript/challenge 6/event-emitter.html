@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Emitter Demo</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      width: 400px;
+      margin: auto;
+      border-radius: 6px;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 6px;
+      width: 100%;
+    }
+    pre {
+      background: #222;
+      color: #0f0;
+      padding: 10px;
+      height: 150px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Event Emitter (Pub/Sub)</h2>
+
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+
+  <button id="loginBtn">Login</button>
+  <button id="removeListeners">Remove userLogin listeners</button>
+
+  <pre id="log"></pre>
+</div>
+
+<script src="event-emitter.js"></script>
+<script>
+  const emitter = createEventEmitter();
+  const log = document.getElementById("log");
+
+  const writeLog = (msg) => {
+    log.textContent += msg + "\n";
+  };
+
+  const unsubscribe = emitter.on("userLogin", (user) => {
+    writeLog(`${user.name} logged in`);
+  });
+
+  emitter.on("userLogin", (user) => {
+    writeLog(`Send welcome email to ${user.email}`);
+  });
+
+  emitter.once("appStart", () => {
+    writeLog("App started - this only runs once");
+  });
+
+  emitter.emit("appStart");
+  emitter.emit("appStart"); 
+
+  document.getElementById("loginBtn").addEventListener("click", () => {
+    const user = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value
+    };
+
+    emitter.emit("userLogin", user);
+  });
+
+  document.getElementById("removeListeners").addEventListener("click", () => {
+    unsubscribe();              
+    emitter.off("userLogin");   
+    writeLog("All userLogin listeners removed");
+  });
+</script>
+
+</body>
+</html>
