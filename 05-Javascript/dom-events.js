@@ -234,5 +234,5 @@ if (incrementBtn && decrementBtn && countDisplay) {
     updateUI();
   });
 
-  updateUI(); // initial state
+  updateUI(); 
 }
