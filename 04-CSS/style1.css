@@ -7,7 +7,6 @@
   --card-bg: #ffffff;
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@ body {
   padding: 40px;
 }
 
-/* CARD */
 .card {
   max-width: 350px;
   background: var(--card-bg);
@@ -37,7 +35,6 @@ body {
   transform: scale(1.03);
 }
 
-/* IMAGE */
 .card-image {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -49,12 +46,10 @@ body {
   transform: scale(1.1);
 }
 
-/* CONTENT */
 .card-content {
   padding: 16px;
 }
 
-/* BADGE */
 .card-badge {
   position: absolute;
   top: 12px;
@@ -67,7 +62,6 @@ body {
   border-radius: 999px;
 }
 
-/* TYPOGRAPHY */
 .card-title {
   font-size: 18px;
   font-weight: 700;
@@ -85,7 +79,6 @@ body {
   overflow: hidden;
 }
 
-/* PRICE */
 .card-price {
   display: flex;
   align-items: center;
@@ -104,7 +97,6 @@ body {
   color: var(--sale-color);
 }
 
-/* BUTTON */
 .card-button {
   width: 100%;
   padding: 10px;
