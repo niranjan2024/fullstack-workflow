@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Events Practice</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      border: 1px solid #ccc;
+      width: 200px;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      border-color: red;
+    }
+
+    .active {
+      box-shadow: 0 0 10px gray;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      width: 200px;
+      padding: 10px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #counter button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+
+<body>
+
+<section>
+  <h2>App Layout</h2>
+  <div id="app">
+    <header>
+      <h1>My App</h1>
+      <nav> 
+        <a href="#home" class="nav-link active">Home</a> 
+        <a href="#about" class="nav-link">About</a> 
+        <a href="#contact" class="nav-link">Contact</a> 
+    </nav>
+    </header>
+
+    <article class="card" data-id="1">
+      <p>Card One</p>
+    </article>
+    <article class="card" data-id="2">
+      <p>Card Two</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Box Demo</h2>
+  <div id="box" class="container">Hello</div>
+  <button id="runDemo">Run Demo</button>
+</section>
+
+<section>
+  <h2>List Manipulation</h2>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Button Events</h2>
+  <button id="btn">Click Me</button>
+</section>
+
+<section>
+  <h2>Form</h2>
+  <form id="search-form">
+    <input id="search-input" placeholder="Search...">
+    <button>Submit</button>
+  </form>
+</section>
+
+<section>
+  <h2>Counter</h2>
+  <div id="counter">
+    <button id="decrement" disabled>-</button>
+    <span id="count">0</span>
+    <button id="increment">+</button>
+  </div>
+</section>
+
+<script src="dom-events.js"></script>
+</body>
+</html>
