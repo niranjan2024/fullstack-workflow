@@ -1,0 +1,183 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    background-color: #f1f5f9f9;
+    color: #0f172a;
+}
+
+header {
+    background-color: #f8fafc;
+    color: #111827;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 17px;
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #374151;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #010610f3;
+    text-decoration: underline;
+}
+
+
+/* ===== Sections ===== */
+section {
+    background: white;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== Section Titles ===== */
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+}
+
+/* ===== About Image ===== */
+#about img {
+    display: block;
+    margin: 15px auto;
+    width: 140px;
+    border-radius: 50%;
+    border: 4px solid #e5e7eb;   
+    background-color: #ffffff; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+/* ===== Skills ===== */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin: 6px 0;
+    color: #475569;
+}
+
+/* ===== Projects ===== */
+#projects article {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 6px solid #2563eb;
+}
+
+#projects h3 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+#projects p {
+    color: #475569;
+}
+
+/* Project Links */
+#projects a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Contact Form ===== */
+form {
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e3a8a;
+}
+
+/* ===== Social Links ===== */
+#social ul {
+    list-style: none;
+}
+
+#social li {
+    margin: 8px 0;
+}
+
+#social a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#social a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
