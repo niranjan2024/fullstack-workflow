@@ -7,7 +7,6 @@ const decBtn = document.getElementById("dec");
 const resetBtn = document.getElementById("reset");
 const stepBtns = document.querySelectorAll(".step");
 
-// Update UI
 function updateCount() {
   countEl.innerText = count;
 
@@ -16,13 +15,11 @@ function updateCount() {
   else countEl.style.color = "black";
 }
 
-// Increment
 incBtn.addEventListener("click", () => {
   count += step;
   updateCount();
 });
 
-// Decrement (no below 0)
 decBtn.addEventListener("click", () => {
   if (count - step >= 0) {
     count -= step;
@@ -30,13 +27,11 @@ decBtn.addEventListener("click", () => {
   }
 });
 
-// Reset
 resetBtn.addEventListener("click", () => {
   count = 0;
   updateCount();
 });
 
-// Step selector
 stepBtns.forEach(btn => {
   btn.addEventListener("click", () => {
     step = Number(btn.innerText);
