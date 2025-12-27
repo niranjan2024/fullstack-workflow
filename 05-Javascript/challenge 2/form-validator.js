@@ -1,4 +1,3 @@
-// Get form elements
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -6,19 +5,16 @@ const confirmPassword = document.getElementById("confirmPassword");
 const submitBtn = document.getElementById("submitBtn");
 const form = document.getElementById("registerForm");
 
-// Error message elements
 const userError = document.getElementById("userError");
 const emailError = document.getElementById("emailError");
 const passError = document.getElementById("passError");
 const confirmError = document.getElementById("confirmError");
 
-// Validation flags
 let validUser = false;
 let validEmail = false;
 let validPass = false;
 let validConfirm = false;
 
-/* ================= USERNAME ================= */
 username.addEventListener("blur", function () {
     const regex = /^[a-zA-Z0-9]{3,15}$/;
 
@@ -34,7 +30,6 @@ username.addEventListener("blur", function () {
     checkForm();
 });
 
-/* ================= EMAIL ================= */
 email.addEventListener("blur", function () {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -50,7 +45,6 @@ email.addEventListener("blur", function () {
     checkForm();
 });
 
-/* ================= PASSWORD ================= */
 password.addEventListener("blur", function () {
     const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
@@ -67,7 +61,6 @@ password.addEventListener("blur", function () {
     checkForm();
 });
 
-/* ================= CONFIRM PASSWORD ================= */
 confirmPassword.addEventListener("blur", function () {
     if (confirmPassword.value === password.value && confirmPassword.value !== "") {
         confirmError.textContent = "✓ Passwords match";
@@ -81,7 +74,6 @@ confirmPassword.addEventListener("blur", function () {
     checkForm();
 });
 
-/* ================= CHECK FORM ================= */
 function checkForm() {
     if (validUser && validEmail && validPass && validConfirm) {
         submitBtn.disabled = false;
@@ -96,7 +88,6 @@ function checkForm() {
     }
 }
 
-/* ================= PREVENT INVALID SUBMIT ================= */
 form.addEventListener("submit", function (e) {
     if (!(validUser && validEmail && validPass && validConfirm)) {
         e.preventDefault();
